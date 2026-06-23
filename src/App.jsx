@@ -1,5 +1,3 @@
-
-import './App.css';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import Gallery from './components/Gallery';
@@ -7,17 +5,15 @@ import Services from './components/Services';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
 
-function App() {
+export default function App() {
   return (
-    <div className="App">
-     <Navbar />
-           <Hero />
-           <Gallery />
-           <Services />
-           <Contact />
-           <Footer />
-    </div>
+    <>
+      <Navbar />
+      <Hero />
+      <Gallery />
+      <Services />
+      <Contact />
+      <Footer />
+    </>
   );
 }
-
-export default App;

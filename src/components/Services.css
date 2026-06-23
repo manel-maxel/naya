@@ -1,0 +1,116 @@
+.services-section {
+  background: var(--dark);
+  padding: 100px 60px;
+}
+
+.services-header {
+  margin-bottom: 60px;
+}
+
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  gap: 1px;
+  background: var(--border);
+  border: 1px solid var(--border);
+}
+
+.service-card {
+  background: var(--dark);
+  padding: 52px 40px;
+  display: flex;
+  flex-direction: column;
+  transition: background 0.4s;
+  position: relative;
+  overflow: hidden;
+}
+
+.service-card::before {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 2px;
+  background: var(--gold);
+  transform: scaleX(0);
+  transition: transform 0.4s ease;
+  transform-origin: left;
+}
+
+.service-card.hovered {
+  background: var(--dark2);
+}
+
+.service-card.hovered::before {
+  transform: scaleX(1);
+}
+
+.service-num {
+  font-size: 11px;
+  letter-spacing: 3px;
+  color: var(--gold);
+  margin-bottom: 32px;
+}
+
+.service-name {
+  font-family: 'Cormorant Garamond', serif;
+  font-size: 30px;
+  font-weight: 300;
+  color: var(--light);
+  margin-bottom: 16px;
+  line-height: 1.2;
+}
+
+.service-desc {
+  font-size: 13px;
+  line-height: 1.9;
+  color: var(--muted);
+  margin-bottom: 28px;
+  flex: 1;
+}
+
+.service-includes {
+  list-style: none;
+  margin-bottom: 32px;
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.service-includes li {
+  font-size: 12px;
+  color: var(--muted);
+  letter-spacing: 0.5px;
+}
+
+.check {
+  color: var(--gold);
+  margin-right: 8px;
+}
+
+.service-footer {
+  border-top: 1px solid var(--border);
+  padding-top: 24px;
+}
+
+.service-price {
+  font-size: 11px;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+  color: var(--gold);
+}
+
+@media (max-width: 900px) {
+  .services-section {
+    padding: 80px 24px;
+  }
+
+  .services-grid {
+    grid-template-columns: 1fr;
+  }
+
+  .service-card {
+    padding: 40px 28px;
+  }
+}
