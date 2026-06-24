@@ -201,7 +201,7 @@ export default function Contact() {
           </a>
           <span className="contact-sep">·</span>
           <a href="tel:+213655508747" className="contact-link">
-            +21355589587
+            +213555898587
           </a>
           <span className="contact-sep">·</span>
           <a href="mailto:nayaprod19@gmail.com" className="contact-link">
