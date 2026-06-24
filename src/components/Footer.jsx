@@ -4,7 +4,7 @@ export default function Footer() {
   return (
     <footer className="footer">
       <div className="footer-top">
-        <div className="footer-logo">N<span>·</span>AYA</div>
+        <div className="footer-logo">NAYA<span>·</span>PROD</div>
         <p className="footer-tagline">Photographe · Mariages & Événements</p>
       </div>
 
