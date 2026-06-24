@@ -16,8 +16,7 @@ export default function Footer() {
           <a href="https://www.instagram.com/nayaprod19?igsh=ejBzcjY1NTRjb3Zy" className="social-link" target="_blank" rel="noopener noreferrer">
             Instagram
           </a>
-          <a href="#" className="social-link">Facebook</a>
-          <a href="#" className="social-link">WhatsApp</a>
+          
         </div>
       </div>
     </footer>
