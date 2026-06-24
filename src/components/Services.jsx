@@ -4,24 +4,38 @@ import './Services.css';
 const services = [
   {
     num: '01',
-    name: 'Mariage complet',
-    desc: 'De la préparation à la soirée. Reportage sur mesure capturant chaque émotion de votre plus beau jour. Livraison sous 4 semaines.',
-    price: 'À partir de 150 000 DA',
-    includes: ['Préparatifs', 'Cérémonie', 'Cocktail', 'Soirée', '400+ photos retouchées'],
+    name: 'Pack Principal',
+    desc: 'Couverture vidéo complète avec montage professionnel + photos illimitées. Flash disque inclus.',
+    price: 'À partir de 50 000 DA',
+    includes: [
+      'Couverture vidéo avec montage',
+      'Photos illimitées',
+      'Flash disque inclus',
+    ],
   },
   {
     num: '02',
-    name: 'Fiançailles & Portraits',
-    desc: 'Une séance intime pour révéler votre complicité. En studio, en extérieur ou dans un lieu qui vous ressemble.',
-    price: 'À partir de 45 000 DA',
-    includes: ['2h de séance', 'Lieu au choix', '80+ photos retouchées', 'Galerie en ligne'],
+    name: 'Options supplémentaires',
+    desc: "Des options à ajouter à votre pack pour personnaliser votre couverture selon vos besoins.",
+    price: 'À partir de 3 000 DA',
+    includes: [
+      'Cortège : +10 000 DA',
+      'Book 80 photos : +6 000 DA',
+      'Album 120 photos : +5 000 DA',
+      'Cadre : +3 000 DA',
+      'Coffre : +6 500 DA',
+      'Drone : +15 000 DA',
+    ],
   },
   {
     num: '03',
-    name: 'Événements privés',
-    desc: "Anniversaires, baptêmes, soirées d'entreprise. Chaque événement mérite d'être immortalisé avec soin.",
-    price: 'À partir de 60 000 DA',
-    includes: ['Durée flexible', 'Multi-ambiances', '200+ photos', 'Livraison rapide'],
+    name: 'Prestations soirée & équipe',
+    desc: "Prolongez votre couverture ou renforcez l'équipe pour capturer chaque instant de votre événement.",
+    price: 'À partir de 3 000 DA / pers',
+    includes: [
+      'Après-midi / Soirée / Dîner : +12 000 DA',
+      'Équipe sans photos : +3 000 DA / pers',
+    ],
   },
 ];
 

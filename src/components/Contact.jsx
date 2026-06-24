@@ -8,13 +8,14 @@ const PUBLIC_KEY = '1_OcLkcTbNFY7_ReL';
 
 export default function Contact() {
   const [form, setForm] = useState({
-    name: '',
-    email: '',
-    type: '',
-    date: '',
-    message: '',
-  });
-
+  name: '',
+  email: '',
+  phone: '',
+  type: '',
+  date: '',
+  eventTime: '',
+  message: '',
+});
   const [submitted, setSubmitted] = useState(false);
   const [loading, setLoading] = useState(false);
   const [error, setError] = useState('');
@@ -32,25 +33,28 @@ export default function Contact() {
       .send(
         SERVICE_ID,
         TEMPLATE_ID,
-        {
-          name: form.name,
-          email: form.email,
-          type: form.type,
-          date: form.date,
-          message: form.message,
-          time: new Date().toLocaleString('fr-FR'),
-        },
+       {
+  name: form.name,
+  email: form.email,
+  phone: form.phone,
+  type: form.type,
+  date: form.date,
+  eventTime: form.eventTime,
+  message: form.message,
+  time: new Date().toLocaleString('fr-FR'),
+},  
         PUBLIC_KEY
       )
       .then(() => {
         setSubmitted(true);
 
-        // reset form (important)
         setForm({
           name: '',
           email: '',
+          phone: '',
           type: '',
           date: '',
+          eventTime: '',
           message: '',
         });
       })
@@ -132,6 +136,18 @@ export default function Contact() {
                 </select>
               </div>
 
+
+                    <div className="form-group">
+              <label htmlFor="phone">Téléphone</label>
+                 <input
+             id="phone"
+             name="phone"
+             type="tel"
+             value={form.phone}
+             onChange={handleChange}
+             required
+             />
+             </div>
               <div className="form-group">
                 <label htmlFor="date">Date envisagée</label>
                 <input
@@ -141,7 +157,20 @@ export default function Contact() {
               onChange={handleChange}
             />
               </div>
-            </div>
+            
+
+
+            <div className="form-group">
+  <label htmlFor="eventTime">Heure de l'événement</label>
+  <input
+    id="eventTime"
+    name="eventTime"
+    type="time"
+    value={form.eventTime}
+    onChange={handleChange}
+  />
+</div>
+         </div>   
 
             <div className="form-group">
               <label htmlFor="message">Votre message</label>
@@ -167,8 +196,12 @@ export default function Contact() {
         )}
 
         <div className="contact-info">
-          <a href="tel:+213697930478" className="contact-link">
-            +213697930478
+          <a href="tel:+213655508747" className="contact-link">
+            +213655508747
+          </a>
+          <span className="contact-sep">·</span>
+          <a href="tel:+213655508747" className="contact-link">
+            +21355589587
           </a>
           <span className="contact-sep">·</span>
           <a href="mailto:nayaprod19@gmail.com" className="contact-link">

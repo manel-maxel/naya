@@ -18,7 +18,7 @@ export default function Navbar() {
 
   return (
     <nav className={`navbar ${scrolled ? 'scrolled' : ''}`}>
-      <div className="navbar-logo">NAYA<span>·</span>Prod</div>
+      <div className="navbar-logo">N<span></span>AYA</div>
 
       <ul className={`navbar-links ${menuOpen ? 'open' : ''}`}>
         <li><button onClick={() => scrollTo('gallery')}>Portfolio</button></li>
